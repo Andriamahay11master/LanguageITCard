@@ -35,3 +35,4 @@ export const data = [
     link: "https://vitejs.dev/",
   },
 ];
+export default data;
