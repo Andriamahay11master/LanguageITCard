@@ -2,7 +2,7 @@ import Language from "./Language";
 
 const Card = () => {
   return (
-    <div>
+    <div className="card">
       <h1>Language</h1>
       <div>
         <Language />

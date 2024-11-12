@@ -1,5 +1,32 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #f4d467;
+  height: 100vh;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.reactImg {
+  width: 250px;
+  height: 250px;
+}
+.card {
+  background: orange;
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
 }
