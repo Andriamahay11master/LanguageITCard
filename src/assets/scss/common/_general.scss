@@ -7,6 +7,7 @@
 body {
   background-color: #f4d467;
   height: 100vh;
+  font-family: "Roboto";
 }
 .app {
   display: flex;
@@ -58,6 +59,8 @@ body {
   transition: all 0.3s ease;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+  height: 200px;
   &:hover {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   }
@@ -80,6 +83,7 @@ body {
     justify-content: center;
     flex-direction: column;
     transition: all 0.3s ease;
+    position: absolute;
   }
   .cardTop {
     transform: translateY(-200px);
