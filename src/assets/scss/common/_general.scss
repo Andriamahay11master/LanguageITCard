@@ -55,9 +55,11 @@ body {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
   &:hover {
-    box-shadow: 1px 3px 3px 1px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   }
   img {
     width: 100px;
@@ -70,5 +72,29 @@ body {
   }
   a {
     color: black;
+  }
+  .cardTop,
+  .cardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+  .cardTop {
+    transform: translateY(-200px);
+    opacity: 0;
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .cardBottom {
+    transform: translateY(+200px);
+    opacity: 0;
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
