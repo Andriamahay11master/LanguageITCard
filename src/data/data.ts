@@ -31,7 +31,7 @@ export const data = [
   },
   {
     name: "Vite",
-    img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vitejs.svg",
+    img: "https://vitejs.fr/logo-with-shadow.png",
     link: "https://vitejs.dev/",
   },
 ];

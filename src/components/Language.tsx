@@ -15,7 +15,9 @@ const Language = ({ name, img, link }: LanguageProps) => {
         <h3>{name}</h3>
       </div>
       <div className={show ? "cardBottom show" : "cardBottom"}>
-        <a href={link}>See the website</a>
+        <a href={link} target="_blank" onClick={(e) => e.stopPropagation()}>
+          See the website
+        </a>
       </div>
     </div>
   );
