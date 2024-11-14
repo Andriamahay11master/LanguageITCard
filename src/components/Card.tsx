@@ -3,10 +3,10 @@ import { data } from "../data/data";
 const Card = () => {
   return (
     <div className="card">
-      <h1>Language</h1>
-      <div>
-        {data.map((item) => (
-          <Language {...item} />
+      <h1>My skills in web development</h1>
+      <div className="langWrapper">
+        {data.map((item, index) => (
+          <Language {...item} key={index} />
         ))}
       </div>
     </div>

@@ -30,3 +30,45 @@ body {
   border-radius: 10px;
   color: #fff;
 }
+.langWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 32px;
+  margin-top: 16px;
+  @include max(1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include max(992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include max(575px) {
+    grid-template-columns: 100%;
+  }
+}
+.cardWrapper {
+  padding: 20px;
+  background-color: peachpuff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 1px 3px 3px 1px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  a {
+    color: black;
+  }
+}
